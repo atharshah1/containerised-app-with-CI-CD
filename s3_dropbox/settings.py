@@ -81,7 +81,7 @@ DATABASES = {
         'NAME': 'my-app-db',
         'USER': 'root',
         'PASSWORD': 'password',
-        'HOST': 's3_dropbox_mysqlDB_1',
+        'HOST': 'mysqlDB',
         'PORT': 3306,
     }
 }
@@ -135,7 +135,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 from decouple import config
 AWS_ACCESS_KEY_ID = config('AWS_KEY')
 AWS_SECRET_ACCESS_KEY = config('AWS_SECRET')
-
 AWS_STORAGE_BUCKET_NAME = 's3-dropbox-project'
 AWS_S3_SIGNATURE_VERSION = 's3v4'
 AWS_S3_REGION_NAME = 'us-east-1'
