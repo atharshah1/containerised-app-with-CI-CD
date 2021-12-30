@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning our repo') {
       steps {
-        git 'https://github.com/atharshah1/containerised-app-with-CI:CD.git'
+        git 'https://github.com/atharshah1/containerised-app-with-CI-CD.git'
       }
     }
     stage('Building our app image') {
